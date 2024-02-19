@@ -9,18 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        guard let buttonText = sender.titleLabel else { return }
-        
-        print(buttonText)
-    }
-    
+    @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Та-дам")
     }
     
+    @IBAction func burronPressed(_ sender: UIButton) {
+        guard let buttonText = sender.currentTitle else { return }
+        
+        print(buttonText)
+        
+        label.text = buttonText
+        
+    }
 }
 

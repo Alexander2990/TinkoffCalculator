@@ -11,7 +11,7 @@ enum CalculationError: Error {
     case divideByZero
 }
 
-enum Operation: String {
+enum Operation: String, CaseIterable {
     case add = "+"
     case subtract = "-"
     case multiply = "x"
@@ -68,12 +68,20 @@ final class ViewController: UIViewController {
             return
         }
         
-        if label.text == "0" {
-            label.text = buttonText
+        if label.text == "0" || label.text == "Ошибка" || label.text?.contains("E") == true {
+            if buttonText == "," {
+                label.text = "0,"
+            } else {
+                label.text = buttonText
+            }
         } else {
+            let input = (label.text ?? "") + buttonText
+            let inputWidth = input.size(withAttributes: [.font : UIFont.systemFont(ofSize: 30.0)]).width
+            
+            if inputWidth > label.bounds.size.width { return }
+            
             label.text?.append(buttonText)
         }
-        
     }
     
     @IBAction func operationBurronPressed(_ sender: UIButton) {
@@ -87,10 +95,14 @@ final class ViewController: UIViewController {
             let labelNumber = numberFormatter.number(from: labelText)?.doubleValue
         else { return }
         
-        calculationHistory.append(.number(labelNumber))
-        calculationHistory.append(.operation(buttonOperation))
-        
-        resetLabelText()
+        if label.text == "0" && buttonText == "-" {
+            label.text = "-"
+        } else {
+            calculationHistory.append(.number(labelNumber))
+            calculationHistory.append(.operation(buttonOperation))
+            
+            resetLabelText()
+        }
     }
     
     @IBAction func clearButtonPressed() {
@@ -108,28 +120,44 @@ final class ViewController: UIViewController {
         else { return }
         
         calculationHistory.append(.number(labelNumber))
+        
         do {
             let result = try calculate()
             
-            label.text = numberFormatter.string(from: NSNumber(value: result))
+            let output = numberFormatter.string(from: NSNumber(value: result))
+            let resultWidth = output?.size(
+                withAttributes: [.font : UIFont.systemFont(ofSize: 30.0)]
+            ).width ?? 0
+            
+            if resultWidth > label.bounds.size.width {
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .scientific
+                formatter.maximumFractionDigits = 5
+                label.text = formatter.string(for: result)
+            } else {
+                label.text = output
+            }
         } catch {
             label.text = "Ошибка"
         }
+        
         calculationHistory.removeAll()
     }
     
     func calculate() throws -> Double {
-        guard case .number(let firstNumber) = calculationHistory[0] else { return 0}
+        guard case .number(let firstNumber) = calculationHistory[0] else { return 0 }
         
         var currentResult = firstNumber
         
-        for index in stride(from: 1, through: calculationHistory.count - 1, by: 2) {
-            guard case .operation(let operation) = calculationHistory[index],
-                  case .number(let number) = calculationHistory[index + 1]
+        for index in stride(from: 1, to: calculationHistory.count - 1, by: 2) {
+            guard
+                case .operation(let operation) = calculationHistory[index],
+                case .number(let number) = calculationHistory[index + 1]
             else { break }
             
             currentResult = try operation.calculate(currentResult, number)
         }
+        
         return currentResult
     }
     

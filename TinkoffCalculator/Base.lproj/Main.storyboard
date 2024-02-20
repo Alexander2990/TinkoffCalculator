@@ -48,7 +48,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="C"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlJ-OQ-wtQ"/>
+                                                    <action selector="clearButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="eL8-Lg-JWd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxs-ZS-rll">
@@ -59,7 +59,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="/"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qjj-Mk-ON8"/>
+                                                    <action selector="operationBurronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRy-Fa-AaL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -75,7 +75,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3a-qx-3xC"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3a-qx-3xC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="par-O4-gZd">
@@ -86,7 +86,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h37-Kx-Nlz"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h37-Kx-Nlz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqd-aJ-eFI">
@@ -97,7 +97,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="9"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWi-nV-YBb"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWi-nV-YBb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pc-yQ-avY">
@@ -108,13 +108,13 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="x"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qx-eO-yad"/>
+                                                    <action selector="operationBurronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzm-C6-19J"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="no5-oi-zVc">
-                                        <rect key="frame" x="0.0" y="380" width="393" height="125.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="380" width="393" height="125.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI3-uu-eEQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="125.66666666666667"/>
@@ -124,7 +124,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="4"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pdm-Pf-i3O"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pdm-Pf-i3O"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qda-9N-uZ5">
@@ -135,7 +135,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2OT-sv-mWi"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2OT-sv-mWi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ras-un-t4j">
@@ -146,7 +146,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TpA-bB-V42"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TpA-bB-V42"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-zN-9Ag">
@@ -157,7 +157,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5U-y0-vZj"/>
+                                                    <action selector="operationBurronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVQ-AA-4mb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -173,7 +173,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="1"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WbU-M6-oDg"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WbU-M6-oDg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="res-KB-qc7">
@@ -184,7 +184,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="2"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEz-6F-Wim"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEz-6F-Wim"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwZ-g4-r2J">
@@ -195,7 +195,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="3"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IE-K2-9uJ"/>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IE-K2-9uJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsa-Sd-utE">
@@ -206,7 +206,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDZ-RQ-HlS"/>
+                                                    <action selector="operationBurronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zra-DC-b6k"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -225,7 +225,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title=","/>
                                                         <connections>
-                                                            <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKU-ug-aK1"/>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKU-ug-aK1"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzj-8c-RJp">
@@ -236,7 +236,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="0"/>
                                                         <connections>
-                                                            <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXF-l0-jsY"/>
+                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXF-l0-jsY"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -249,7 +249,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="="/>
                                                 <connections>
-                                                    <action selector="burronPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acx-LO-gES"/>
+                                                    <action selector="calculateButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5e-Ks-eoJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
